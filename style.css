@@ -1,0 +1,922 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  /* background-color: black; */
+}
+html{
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 100%;
+  height: 3rem;
+  position: sticky;
+  top: 0; /* Stick to the top of the viewport */
+  display: flex;
+  justify-content: space-between;
+  background-color: #009e5f;
+  z-index: 1000;
+}
+
+/* logo start */
+.container .logo img {
+  width: 5rem;
+  height: 4rem;
+  margin-left: 1rem;
+}
+/* logo end */
+
+/* nav bar start */
+
+.right_nav {
+  padding: 15px;
+  margin-right: 10px;
+  z-index: 100;
+}
+.right_nav a {
+  color: white;
+  padding: 10px;
+  margin-right: 10px;
+}
+.three_line {
+  width: 100%;
+  height: 11.5rem;
+  background-color: #009e5f;
+  padding: 5% 35%;
+  text-align: center;
+}
+.three_line a b {
+  padding-top: 50px;
+  padding-bottom: 150px;
+  color: rgb(255, 255, 255);
+}
+/* nav bar end */
+
+/* hero section start */
+/* main_tag start */
+.main_div {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  align-items: center;
+  height: 10%;
+  background-color: white;
+}
+.left_main {
+  width: 30%;
+  height: 100%;
+}
+.left_main img {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.left_main h1 {
+  font-size: 100%;
+  text-align: center;
+  font-weight: bold;
+  color: #009e5f;
+}
+
+.left_main input {
+  width: 70%;
+  height: 5%;
+  font-size: 100%;
+  padding: 2.5%;
+  padding-right: 15px;
+  margin-top: 5%;
+  margin-left: 15%;
+  background-color: white;
+  border: 3px solid #009e5f;
+  color: #009e5f;
+}
+.left_main:hover input {
+  color: white;
+  background-color: #009e5f;
+  animation: color-full 200ms ease-out forwards;
+}
+@keyframes color-full {
+  from {
+    background: linear-gradient(
+      to right,
+      #009e5f 0%,
+      #009e5f 50%,
+      white 50%,
+      white 100%
+    );
+    background-size: 200% 100%;
+    background-position: right;
+  }
+  to {
+    background: linear-gradient(
+      to right,
+      #009e5f 0%,
+      #009e5f 50%,
+      white 50%,
+      white 100%
+    );
+    background-size: 200% 100%;
+    background-position: left;
+  }
+}
+.right_main {
+  width: 70%;
+  height: 100%;
+}
+.right_main img {
+  width: 100%;
+  padding: 40%;
+}
+.right_main {
+  background-image: url("images/7up_featured.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  backface-visibility: visible;
+}
+
+/* main div_1 start */
+.main_div_1 {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+/* top main start */
+.top_main {
+  width: 100%;
+  height: 50%;
+}
+.top_main img {
+  width: 100%;
+  padding: 40%;
+}
+.top_main {
+  background-image: url("images/7up_featured.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  backface-visibility: visible;
+}
+/* top main end */
+
+/* bottom main start */
+.bottom_main {
+  width: 100%;
+  height: 50%;
+}
+.bottom_main img {
+  margin-left: 10%;
+  width: 80%;
+}
+.bottom_main h1 {
+  font-size: 150%;
+  text-align: center;
+  font-weight: bold;
+  color: #009e5f;
+}
+.bottom_main input {
+  width: 70%;
+  height: 5%;
+  font-size: 100%;
+  padding: 2.5%;
+  padding-right: 15px;
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-bottom: 15%;
+  background-color: white;
+  border: 3px solid #009e5f;
+  color: #009e5f;
+}
+.bottom_main:hover input {
+  color: white;
+  background-color: #009e5f;
+  animation: color-full 200ms ease-out forwards;
+}
+@keyframes color-full {
+  from {
+    background: linear-gradient(
+      to right,
+      #009e5f 0%,
+      #009e5f 50%,
+      white 50%,
+      white 100%
+    );
+    background-size: 200% 100%;
+    background-position: right;
+  }
+  to {
+    background: linear-gradient(
+      to right,
+      #009e5f 0%,
+      #009e5f 50%,
+      white 50%,
+      white 100%
+    );
+    background-size: 200% 100%;
+    background-position: left;
+  }
+}
+
+/* bottom main end */
+
+/* main div_1 end */
+/* main tag end */
+/* hero section end */
+
+/* new simple 7 up section start */
+
+/* for laptop */
+.new_simple_7up {
+  height: 900px;
+  background-image: url(images/7up-simple-banner.jpg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+}
+
+.new_simple_7up h1 {
+  color: white;
+  font-size: 350%;
+  padding: 0px 0px 10px 0px;
+}
+.new_simple_7up h3 {
+  color: white;
+  font-size: 150%;
+  padding: 0px 0px 10px 0px;
+}
+
+.new_simple_7up input {
+  width: 200px;
+  height: 65px;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: white;
+  border: 5px solid #009e5f;
+  color: #009e5f;
+}
+
+.new_simple_7up input:hover {
+  color: white;
+  background-color: #009e5f;
+  animation: color-fill 200ms ease-out forwards;
+}
+@keyframes color-fill {
+  from {
+    background: linear-gradient(
+      to right,
+      #009e5f 0%,
+      #009e5f 50%,
+      white 50%,
+      white 100%
+    );
+    background-size: 200% 100%;
+    background-position: right;
+  }
+  to {
+    background: linear-gradient(
+      to right,
+      #009e5f 0%,
+      #009e5f 50%,
+      white 50%,
+      white 100%
+    );
+    background-size: 200% 100%;
+    background-position: left;
+  }
+}
+.new_simple_7up {
+  padding: 20% 0% 0% 10%;
+}
+
+/* for mobile */
+.new_simple_7up_1 {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.new_simple_7up_1 .image img {
+  height: 100%;
+  width: 100%;
+}
+.new_simple_7up_1 .text {
+  margin-top: 0;
+  background-color: #009e5f;
+  padding: 0% 5%;
+  text-align: center;
+}
+.new_simple_7up_1 .text h1 {
+  color: white;
+  font-size: 250%;
+  padding: 0px 0px 30px 0px;
+}
+.new_simple_7up_1 .text h3 {
+  color: white;
+  font-size: 100%;
+  padding: 0px 0px 10px 0px;
+}
+
+.new_simple_7up_1 .text input {
+  width: 200px;
+  height: 65px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15%;
+  background-color: white;
+  border: 5px solid #009e5f;
+  color: #009e5f;
+}
+
+.new_simple_7up_1 .text input:hover {
+  color: white;
+  background-color: #009e5f;
+  animation: color-fill 200ms ease-out forwards;
+}
+@keyframes color-fill {
+  from {
+    background: linear-gradient(
+      to right,
+      #009e5f 0%,
+      #009e5f 50%,
+      white 50%,
+      white 100%
+    );
+    background-size: 200% 100%;
+    background-position: right;
+  }
+  to {
+    background: linear-gradient(
+      to right,
+      #009e5f 0%,
+      #009e5f 50%,
+      white 50%,
+      white 100%
+    );
+    background-size: 200% 100%;
+    background-position: left;
+  }
+}
+/* new simple 7 up section end */
+
+/* cocktail_recipes start */
+/* for laptop */
+.container_1 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_1 {
+  background-image: url(images/module_cocktail.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position:top;
+  min-height: 100vh;
+}
+
+.box {
+  width: 100%;
+  height: 5%;
+}
+.container_1 a {
+  text-decoration:none;
+  color: rgb(255, 255, 255);
+}
+.cocktail_recipes .box h2 {
+  font-size: 225%;
+  font-weight: 5%;
+  padding: 20px;
+  background-color: #fe5887;
+}
+.container_1:hover h2 {
+  margin: -10px;
+  animation: one 2s forwards;
+}
+
+@keyframes one {
+  from {
+    background: linear-gradient(
+      to right,
+      #fe5887 0%,
+      #fe5887 50%,
+      rgba(255, 255, 255, 0.223) 50%,
+      rgba(255, 255, 255, 0.123) 100%
+    );
+    background-size: 200% 100%; /* Stretch the gradient twice the element width */
+    background-position: right; /* Start color from right */
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    background: linear-gradient(
+      to right,
+      #fe5887 0%,
+      #fe5887 50%,
+      rgba(255, 255, 255, 0.262) 50%,
+      rgba(255, 255, 255, 0.058) 100%
+    );
+    background-size: 200% 100%;
+    background-position: left; /* Animate color to fill from left */
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* cocktail recipies end */
+
+/* cooking recipes start */
+
+.container_2 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container_2 {
+  background-image: url(images/module_cooking.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position:top;
+  min-height: 100vh;
+}
+.box_1 {
+  width: 100%;
+  height: 5%;
+}
+.container_2 a {
+  text-decoration: none;
+  color: white;
+}
+.cooking_recipes .box_1 h2 {
+  font-size: 225%;
+  font-weight: 5%;
+  padding: 20px;
+  background-color: #6ba13f;
+}
+.container_2:hover  h2 {
+  margin: -10px;
+  animation: tow 2s forwards;
+}
+
+@keyframes tow {
+  from {
+    background: linear-gradient(
+      to right,
+      #6ba13f 0%,
+      #6ba13f 50%,
+      rgba(255, 255, 255, 0.333) 50%,
+      rgba(255, 255, 255, 0.112) 100%
+    );
+    background-size: 200% 100%; /* Stretch the gradient twice the element width */
+    background-position: right; /* Start color from right */
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    background: linear-gradient(
+      to right,
+      #6ba13f 0%,
+      #6ba13f 50%,
+      rgba(255, 255, 255, 0.333) 50%,
+      rgba(255, 255, 255, 0.112) 100%
+    );
+    background-size: 200% 100%;
+    background-position: left; /* Animate color to fill from left */
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* cooking recipes end */
+
+/* see_all_recipes start */
+
+.container_3 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.container_3 {
+  background-image: url(images/module_seeall.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position:top;
+  min-height: 100vh;
+  
+}
+.box_2 {
+  width: 98%;
+  height: 5%;
+}
+.container_3 a {
+  text-decoration: none;
+  color: white;
+}
+.box_2 h2 {
+  font-size: 225%;
+  font-weight: 5%;
+  padding: 20px;
+  background-color: #c064ac;
+}
+.container_3:hover h2 {
+  margin: -10px;
+  animation: three 2s forwards; 
+}
+@keyframes three {
+  from {
+    background: linear-gradient(
+      to right,
+      #c064ac 0%,
+      #c064ac 50%,
+      rgba(255, 255, 255, 0.471) 50%,
+      rgba(255, 255, 255, 0.108) 100%
+    );
+    background-size: 200% 100%; /* Stretch the gradient twice the element width */
+    background-position: right; /* Start color from right */
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    background: linear-gradient(
+      to right,
+      #c064ac 0%,
+      #c064ac 50%,
+      rgba(255, 255, 255, 0.471) 50%,
+      rgba(255, 255, 255, 0.108) 100%
+    );
+    background-size: 200% 100%;
+    background-position: left; /* Animate color to fill from left */
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* see all recipies */
+
+/* section_drink_straight start*/
+/* for laptop */
+
+.drink_straight {
+  display: flex;
+  width: 100%;
+  height: 800px;
+}
+
+.left_side {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.left_side #one {
+  width: 50%;
+  height: 50%;
+  padding: 20px;
+  text-align: center;
+  /* background-color: red; */
+}
+.left_side #one:hover img {
+  width: 195px;
+}
+.left_side #tow {
+  width: 50%;
+  height: 50%;
+  padding: 3px 5px 3px 0px;
+  text-align: center;
+  /* background-color: blue; */
+}
+.left_side #tow:hover img {
+  height: 410px;
+  padding-right: 50%;
+}
+.left_side #three {
+  width: 50%;
+  height: 50%;
+  padding: 15px;
+  text-align: center;
+  /* background-color: yellow; */
+}
+.left_side #three:hover img {
+  width: 190px;
+}
+.left_side #four {
+  width: 50%;
+  height: 50%;
+  padding: 15px;
+  text-align: center;
+  /* background-color: green; */
+}
+.left_side #four:hover img {
+  width: 210px;
+}
+
+.left_side img {
+  padding: 5px;
+}
+
+.right_side {
+  width: 50%;
+  height: 100%;
+  background: #ececec;
+}
+.right_top {
+  padding: 85px 100px 69px 100px;
+}
+.right_side .right_top h1 {
+  display: flex;
+  position: relative;
+  font-size: 90px;
+  color: #009e5f;
+}
+
+.right_side .right_top span {
+  position: absolute;
+  top: 85%;
+  left: 25%;
+  font-size: 20px;
+  color: red;
+}
+
+.right_side .right_top p {
+  font-size: 20px;
+  color: rgba(38, 37, 37, 0.488);
+}
+.right_bottom img {
+  width: 600px;
+  padding: 0px 111px;
+
+}
+
+/* for laptop */
+.display-can-txt .animation .left_side{
+  width: 100%;
+  height: 25rem;
+  animation: autoplay 20s infinite alternate;
+}
+@keyframes autoplay{
+  0%{
+    background-image: url(https://s7d1.scene7.com/is/image/kdrp/SU_Cherry_SZ_12oz_Can_Dry?$Dynamic-PublicURL-PNG?wid=50&hei=350);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  50%{
+    background-image: url(https://s7d1.scene7.com/is/image/kdrp/13184_SU_Simple_12oz_12pk_Can_eComm_ConsumableUnit_New?$Dynamic-PublicURL-PNG?wid=50&hei=380);
+    background-repeat: no-repeat;
+    
+    background-position: center;
+  }
+  75%{
+    background-image: url(https://s7d1.scene7.com/is/image/kdrp/SU_Regular_ZS_12oz_Can_Dry?$Dynamic-PublicURL-PNG?wid=50&hei=320);
+    background-repeat: no-repeat;
+    
+    background-position: center;
+  }
+  100%{
+    background-image: url(https://s7d1.scene7.com/is/image/kdrp/SU_Cherry_12oz_Can_Dry?$Dynamic-PublicURL-PNG?wid=50&hei=320);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+}
+
+.text-pic .right_side {
+  width: 100%;
+  height: 100%;
+  background: #ececec;
+  overflow: hidden
+}
+.text-pic .right_side .right_top {
+  padding: 50px;
+  
+}
+.text-pic .right_side .right_top h1 {
+  display: flex;
+  position: relative;
+  font-size: 50px;
+  color: #009e5f;
+}
+
+.text-pic .right_side .right_top span {
+  position: absolute;
+  top: 85%;
+  left: 25%;
+  font-size: 15px;
+  color: red;
+}
+
+.text-pic .right_side .right_top p {
+  font-size: 15px;
+  padding-top: 15px ;
+  color: rgba(38, 37, 37, 0.488);
+}
+.text-pic .right_side .right_bottom img {
+  width: 250px;
+  padding: 0px 25px;
+  margin-left: 35px;
+  overflow: hidden;
+}
+
+/* footer start */
+
+/* for laptop */
+
+footer {
+  width: 100%;
+  height: 800px;
+  padding-top: 25px;
+  background-image: url(images/footer-bg.jpg);
+  background-size: cover;
+}
+
+.relative_and_abosolute .text {
+  width: 500px;
+  height: 50px;
+  margin: 8% 50%;
+}
+.relative_and_abosolute .text h1 {
+  text-align: center;
+  background-color: red;
+  transform: matrix(1, -0.4513, 0, 1, 21.8691, 152.353);
+  font-size: 80px;
+  color: white;
+}
+.relative_and_abosolute .over_the_footer{
+  margin-left: 200px;
+  margin-top: 400px;
+  width: 75%;
+  height: 150px;
+  background-color: rgba(245, 245, 245, 0.658);
+  
+}
+ .relative_and_abosolute .over_the_footer  .first_line {
+  text-align: center;
+padding-bottom: 10px;
+
+}
+.relative_and_abosolute .over_the_footer .first_line a {
+  text-decoration: none;
+  color: #636363;
+  
+  padding: 0px 5px;
+  font-size: 25px;
+}
+.relative_and_abosolute .over_the_footer .middle_line {
+  text-align: center;
+  
+  margin-top: 15px;
+}
+.relative_and_abosolute .over_the_footer .middle_line a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #636363;
+  padding: 0px 5px;
+}
+.relative_and_abosolute .over_the_footer .last_line {
+  margin: 10px 0px 0px 0px;
+  text-align: center;
+  color: #636363;
+} 
+
+
+/* for mobile */
+.footer{
+  margin-top: 0;
+  width: 97.5%;
+  height: 480px;
+  background-image: url(images/footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-size:220% ;
+  background-position: 32.5%;
+}
+.footer .text {
+  width: 150px;
+  height: 20px;
+  margin: 0% 50%;
+}
+.footer .text h1 {
+  text-align: center;
+  background-color: red;
+  transform: matrix(1, -0.4513, 0, 1, 21.8691, 152.353);
+  font-size: 20px;
+  color: white;
+}
+.footer .box{
+ 
+  margin-top: 220px;
+   width: 100%;
+   height: 240px;
+   background-color: rgba(245, 245, 245, 0.438);
+
+}
+
+.footer .box .first_line {
+  text-align: center;
+padding-bottom: 10px;
+
+}
+.footer .box .first_line a {
+  text-decoration: none;
+  color: #636363;
+  
+  padding: 0px 5px;
+  font-size: 25px;
+}
+.footer .box .middle_line {
+  text-align: center;
+  margin-top: 15px;
+}
+.footer .box  .middle_line a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #636363;
+  padding: 0px 5px;
+}
+.footer .box .last_line {
+  margin: 10px 0px 0px 0px;
+  text-align: center;
+  color: #636363;
+}
+
+/* responsive format */
+
+@media (max-width: 1024px) {
+  .new_simple_7up {
+    height: 500px;
+  }
+  .new_simple_7up {
+    padding: 10%;
+  }
+  .new_simple_7up {
+    display: none;
+  }
+  
+}
+@media (min-width: 1024px) {
+  .new_simple_7up_1 {
+    display: none;
+  }
+  
+}
+@media (min-width: 1440px) {
+
+}
+
+@media (max-width: 1440px) {
+
+}
+
+
+@media (max-width: 767px) {
+    .right_nav {
+      display: none;
+    }
+  
+    .left_main input {
+      font-size: 70%;
+    }
+  
+    .main_div {
+      display: none;
+    }
+    .drink_straight{
+      display: none;
+    }
+    footer {
+      display: none;
+    }
+    
+  }
+  @media (min-width: 767px) {
+    .three_line {
+      display: none;
+    }
+    .left_main h1 {
+      font-size: 200%;
+    }
+    .main_div_1 {
+      display: none;
+    }
+    .display-can-txt{
+      display: none;
+    }
+    
+  }
+  @media (min-width: 767px){
+    .footer{
+      display: none;
+    }
+  }
+  
+  
+  
